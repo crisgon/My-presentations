@@ -1,0 +1,41 @@
+body {
+  background: #4b4b4b;
+}
+.logosvg {
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logosvg svg {
+  width: 100%;
+}
+
+.logosvg svg .partone {
+  fill:#8e44ad;
+}
+
+.logosvg svg .parttwo {
+  fill:#2f3640;
+}
+
+.logosvg:hover svg .partone{
+  fill:#2f3640;
+}
+.logosvg:hover svg .parttwo{
+  fill:#8e44ad;
+}
+
+@media(max-width: 400px) {
+  .logosvg svg .parttwo,
+  .logosvg svg .partone {
+    fill:#fff200;
+  }
+
+  .logosvg:hover svg .parttwo,
+  .logosvg:hover svg .partone{
+    fill:#ff3838;
+  }
+}

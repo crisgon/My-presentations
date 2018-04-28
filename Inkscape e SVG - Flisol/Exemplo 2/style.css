@@ -1,0 +1,40 @@
+body {
+  background-color: #2d3436;
+}
+
+.animation {
+  width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.animation svg {
+  width: 100%;
+}
+
+.animation svg path {
+  fill: transparent;
+  stroke-width: 2px;
+  stroke: #55efc4;
+  stroke-dashoffset: 1000;
+  stroke-dasharray: 1000;
+  animation: svganimation 5s ease-in-out forwards infinite;
+}
+
+@keyframes svganimation {
+  0%{
+    stroke-dashoffset: 1000;
+    stroke: #55efc4;
+  }
+  50%{
+    stroke-dashoffset: 500;
+    stroke: #fff;
+  }
+  100%{
+    stroke-dashoffset: 0;
+    stroke: #55efc4;
+  }
+
+}
